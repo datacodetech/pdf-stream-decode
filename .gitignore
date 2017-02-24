@@ -1,0 +1,19 @@
+# Windows
+Thumbs.db
+
+# Vim swap files
+*.swp
+
+# Atom thing - https://atom.io/packages/savey-wavey
+/.on-save.json
+
+# PhpStorm Project file
+/.idea
+
+# Composer/library files
+/composer.lock
+/composer.phar
+/vendor
+
+# Test results
+/test-results

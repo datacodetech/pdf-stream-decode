@@ -1,0 +1,25 @@
+{
+	"name": "dataplan/pdf-stream-decode",
+	"version": "0.1",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "git@git.dataplan.co.uk:jacek/dataplan-code-standard.git"
+		}
+	],
+	"require": {
+
+	},
+	"require-dev": {
+		"dataplan/code-standard": "dev-master",
+		"squizlabs/php_codesniffer": "~2",
+		"phpunit/phpunit": "~6"
+	},
+	"autoload": {
+		"psr-4": {
+			"dataplan\\pdfStreamDecode\\": "./src"
+		}
+	}
+}
