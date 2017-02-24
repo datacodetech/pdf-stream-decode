@@ -2,9 +2,11 @@
 
 declare(strict_types=1);
 
-use dataplan\pdfStreamDecode\filter;
-
 namespace dataplan\pdfStreamDecode\filter;
+
+use Tuupola\Base85;
+
+use dataplan\pdfStreamDecode\filter;
 
 class ascii85_decode extends filter {
 
@@ -19,7 +21,7 @@ class ascii85_decode extends filter {
 	 * @inheritDoc
 	 */
 	public function decode(string $data): string {
-		throw new \Exception('Not yet implemented');
+		return Base85::decode($data);
 	}
 
 }

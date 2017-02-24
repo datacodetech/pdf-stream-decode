@@ -14,7 +14,7 @@
 		}
 	],
 	"require": {
-
+		"tuupola/base85": "~0.1"
 	},
 	"require-dev": {
 		"dataplan/code-standard": "dev-master",
