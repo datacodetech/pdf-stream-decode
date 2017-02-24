@@ -4,6 +4,16 @@ declare(strict_types=1);
 
 namespace dataplan\pdfStreamDecode;
 
+use dataplan\pdfStreamDecode\filter\ascii85_decode;
+use dataplan\pdfStreamDecode\filter\ascii_hex_decode;
+use dataplan\pdfStreamDecode\filter\flate_decode;
+use dataplan\pdfStreamDecode\filter\lzw_decode;
+use dataplan\pdfStreamDecode\filter\run_length_decode;
+use dataplan\pdfStreamDecode\filter\dct_decode;
+use dataplan\pdfStreamDecode\filter\ccitt_fax_decode;
+use dataplan\pdfStreamDecode\filter\jbig2_decode;
+use dataplan\pdfStreamDecode\filter\jpx_decode;
+
 abstract class filter {
 
 	protected $name;
