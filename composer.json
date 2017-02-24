@@ -7,6 +7,10 @@
 		{
 			"type": "vcs",
 			"url": "git@git.dataplan.co.uk:jacek/dataplan-code-standard.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/betterphp/php-reflection-utils.git"
 		}
 	],
 	"require": {
@@ -15,7 +19,8 @@
 	"require-dev": {
 		"dataplan/code-standard": "dev-master",
 		"squizlabs/php_codesniffer": "~2",
-		"phpunit/phpunit": "~6"
+		"phpunit/phpunit": "~6",
+		"betterphp/php-reflection-utils": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {
