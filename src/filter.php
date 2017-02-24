@@ -53,15 +53,15 @@ abstract class filter {
 	 */
 	public static function get_class_map(): array {
 		return [
-			'ASCII85Decode' => ascii85_decode::class,
 			'ASCIIHexDecode' => ascii_hex_decode::class,
-			'FlateDecode' => flate_decode::class,
-			'LZWDecode' => lzw_decode::class,
-			'RunLengthDecode' => run_length_decode::class,
-			'DCTDecode' => dct_decode::class,
+			'ASCII85Decode' => ascii85_decode::class,
 			'CCITTFaxDecode' => ccitt_fax_decode::class,
+			'DCTDecode' => dct_decode::class,
+			'FlateDecode' => flate_decode::class,
 			'JBIG2Decode' => jbig2_decode::class,
 			'JPXDecode' => jpx_decode::class,
+			'LZWDecode' => lzw_decode::class,
+			'RunLengthDecode' => run_length_decode::class,
 		];
 	}
 
