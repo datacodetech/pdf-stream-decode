@@ -20,7 +20,8 @@
 		"dataplan/code-standard": "dev-master",
 		"squizlabs/php_codesniffer": "~2",
 		"phpunit/phpunit": "~6",
-		"betterphp/php-reflection-utils": "dev-master"
+		"betterphp/php-reflection-utils": "dev-master",
+		"smalot/pdfparser": "~0.10"
 	},
 	"autoload": {
 		"psr-4": {
