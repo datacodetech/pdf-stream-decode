@@ -21,7 +21,7 @@ class ascii85_decode extends filter {
 	 * @inheritDoc
 	 */
 	public function decode(string $data): string {
-		return Base85::decode($data);
+		return (new Base85())->decode($data);
 	}
 
 }
