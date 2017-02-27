@@ -19,6 +19,7 @@ class jbig2_decode extends filter {
 	 * @inheritDoc
 	 */
 	public function decode(string $data): string {
+		// Consider jbig2dec command line tool
 		throw new \Exception('Not yet implemented');
 	}
 
