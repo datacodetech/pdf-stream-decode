@@ -14,7 +14,8 @@
 		}
 	],
 	"require": {
-		"tuupola/base85": "~0.1"
+		"tuupola/base85": "~0.1",
+		"setasign/fpdi": "~1.6"
 	},
 	"require-dev": {
 		"dataplan/code-standard": "dev-master",

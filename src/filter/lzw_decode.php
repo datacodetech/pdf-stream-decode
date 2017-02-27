@@ -19,7 +19,8 @@ class lzw_decode extends filter {
 	 * @inheritDoc
 	 */
 	public function decode(string $data): string {
-		throw new \Exception('Not yet implemented');
+		// Wrap FPDI https://github.com/Setasign/FPDI/blob/master/filters/FilterLZW.php
+		return (new \FilterLZW())->decode($data);
 	}
 
 }
