@@ -19,7 +19,7 @@ class flate_decode extends filter {
 	 * @inheritDoc
 	 */
 	public function decode(string $data): string {
-		throw new \Exception('Not yet implemented');
+		return gzuncompress($data);
 	}
 
 }
