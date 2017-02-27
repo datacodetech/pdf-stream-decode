@@ -60,7 +60,7 @@ class ccitt_fax_decode extends filter {
 			['vvVV', 256, 4, 1, $columns], // ImageWidth
 			['vvVV', 257, 4, 1, $rows], // ImageLength
 			['vvVV', 258, 3, 1, $bits_per_component], // BitsPerSample
-			['vvVV', 259, 3, 1, $compression], // Compression // ??
+			['vvVV', 259, 3, 1, $compression], // Compression
 			['vvVV', 262, 3, 1, 0], // Threshholding
 			['vvVV', 273, 4, 1, (2 + 2 + 4 + 2 + (12 * 8) + 4)], // StripOffsets
 			['vvVV', 278, 4, 1, $rows], // RowsPerStrip
