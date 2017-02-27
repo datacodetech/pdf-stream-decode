@@ -19,7 +19,8 @@ class dct_decode extends filter {
 	 * @inheritDoc
 	 */
 	public function decode(string $data): string {
-		throw new \Exception('Not yet implemented');
+		// Raw JPG data, just return
+		return $data;
 	}
 
 }
