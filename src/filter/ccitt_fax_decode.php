@@ -39,8 +39,6 @@ class ccitt_fax_decode extends filter {
 			$compression = 2;
 		} else if ($k < 0) { // T6
 			$compression = 4;
-		} else {
-			throw new \Exception('Invalid K value ' . $k);
 		}
 
 		/*
