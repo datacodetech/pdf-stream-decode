@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 use dataplan\pdfStreamDecode\filter\jpx_decode;
 
+/**
+ * @covers dataplan\pdfStreamDecode\filter\jpx_decode
+ */
 class JpxDecodeTest extends StreamDecodeTestCase {
 
 	public function testDecode() {

@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 use dataplan\pdfStreamDecode\filter\jbig2_decode;
 
+/**
+ * @covers dataplan\pdfStreamDecode\filter\jbig2_decode
+ */
 class Jbig2DecodeTest extends StreamDecodeTestCase {
 
 	public function testDecode() {

@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 use dataplan\pdfStreamDecode\filter\flate_decode;
 
+/**
+ * @covers dataplan\pdfStreamDecode\filter\flate_decode
+ */
 class FlateDecodeTest extends StreamDecodeTestCase {
 
 	public function testDecode() {
