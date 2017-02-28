@@ -13,12 +13,13 @@ class CCITTFaxDecodeTest extends StreamDecodeTestCase {
 		$filter = new ccitt_fax_decode([
 			'Width' => 0,
 			'Height' => 0,
-			'Columns' => 0,
-			'Rows' => 0,
-			'K' => -1,
 			'EncodedByteAlign' => false,
 			'Length' => 1024,
 			'BitsPerComponent' => 1,
+		], [
+			'K' => -1,
+			'Columns' => 0,
+			'Rows' => 0,
 		]);
 
 		$input = 'tiff_data';
@@ -50,7 +51,7 @@ class CCITTFaxDecodeTest extends StreamDecodeTestCase {
 		// Test file has the size in a separate object
 		$details['Length'] = $details['Length'][0];
 
-		$filter = new ccitt_fax_decode(array_merge($details, $details['DecodeParms']));
+		$filter = new ccitt_fax_decode($details, $details['DecodeParms']);
 
 		$result = $filter->decode($stream_data);
 

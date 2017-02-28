@@ -9,10 +9,11 @@ use dataplan\pdfStreamDecode\filter;
 class jbig2_decode extends filter {
 
 	/**
+	 * @param array $stream_params Input variables attached to the stream object
 	 * @param array $decode_params Input params for the decode function
 	 */
-	public function __construct(array $decode_params) {
-		parent::__construct('JBIG2Decode', $decode_params);
+	public function __construct(array $stream_params, array $decode_params) {
+		parent::__construct('JBIG2Decode', $stream_params, $decode_params);
 	}
 
 	/**

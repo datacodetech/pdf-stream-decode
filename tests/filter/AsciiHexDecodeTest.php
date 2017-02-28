@@ -10,7 +10,7 @@ use dataplan\pdfStreamDecode\filter\ascii_hex_decode;
 class ASCIIHexDecodeTest extends StreamDecodeTestCase {
 
 	public function testDecode() {
-		$filter = new ascii_hex_decode([]);
+		$filter = new ascii_hex_decode([], []);
 
 		$input = '776f77207375636820737472696e67';
 		$expected_result = 'wow such string';

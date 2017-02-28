@@ -6,26 +6,37 @@ namespace dataplan\pdfStreamDecode;
 
 class stream {
 
-	protected $filters;
-
+	private $filter_names;
+	private $stream_params;
+	private $decode_params;
 	private $data;
+
+	private $filters;
 	private $decoded;
 
 	/**
-	 * @param array $filter_names A list of filter names
-	 * @param array $decode_params The decode_params from the PDF header
+	 * @param array $stream_params An assoc array of params attached to the stream
 	 * @param string $data The input data
 	 */
-	public function __construct(array $filter_names, array $decode_params, string $data) {
-		$this->filters = [];
+	public function __construct(array $stream_params, string $data) {
+		$this->filter_names = $stream_params['Filter'];
+		$this->stream_params = $stream_params;
+		$this->decode_params = ($stream_params['DecodeParms'] ?? []);
+		$this->data = $data;
 
-		foreach ($filter_names as $name) {
-			$this->filters[] = filter::get_by_name($name, $decode_params[$name]);
+		$this->filters = [];
+		$this->decoded = null;
+
+		unset($this->stream_params['Filter'], $this->stream_params['DecodeParms']);
+
+		if (!is_array($this->filter_names)) {
+			$this->filter_names = [ $this->filter_names ];
+			$this->decode_params = [ $this->filter_names[0] => $this->decode_params ];
 		}
 
-		$this->decode_params = $decode_params;
-		$this->data = $data;
-		$this->decoded = null;
+		foreach ($filter_names as $name) {
+			$this->filters[] = filter::get_by_name($name, $this->stream_params, $this->decode_params[$name]);
+		}
 	}
 
 	/**

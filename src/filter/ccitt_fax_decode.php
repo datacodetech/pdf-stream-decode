@@ -9,27 +9,28 @@ use dataplan\pdfStreamDecode\filter;
 class ccitt_fax_decode extends filter {
 
 	/**
+	 * @param array $stream_params Input variables attached to the stream object
 	 * @param array $decode_params Input params for the decode function
 	 */
-	public function __construct(array $decode_params) {
-		parent::__construct('CCITTFaxDecode', $decode_params);
+	public function __construct(array $stream_params, array $decode_params) {
+		parent::__construct('CCITTFaxDecode', $stream_params, $decode_params);
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function decode(string $data): string {
-		$width = ($this->decode_params['Width'] ?? $this->decode_params['W'] ?? 1728);
-		$height = ($this->decode_params['Height'] ?? $this->decode_params['H'] ?? 0);
+		$width = ($this->stream_params['Width'] ?? $this->stream_params['W'] ?? 1728);
+		$height = ($this->stream_params['Height'] ?? $this->stream_params['H'] ?? 0);
 
 		$columns = ($this->decode_params['Columns'] ?? $width);
 		$rows = ($this->decode_params['Rows'] ?? $height);
 
 		$k = ($this->decode_params['K'] ?? 0);
-		$align = (bool) ($this->decode_params['EncodedByteAlign'] ?? false);
+		$align = (bool) ($this->stream_params['EncodedByteAlign'] ?? false);
 
-		$length = (int) $this->decode_params['Length'];
-		$bits_per_component = (int) ($this->decode_params['BitsPerComponent'] ?? 1);
+		$length = (int) $this->stream_params['Length'];
+		$bits_per_component = (int) ($this->stream_params['BitsPerComponent'] ?? 1);
 
 		$ccitt_group = 4;
 

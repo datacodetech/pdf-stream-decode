@@ -9,10 +9,11 @@ use dataplan\pdfStreamDecode\filter;
 class lzw_decode extends filter {
 
 	/**
+	 * @param array $stream_params Input variables attached to the stream object
 	 * @param array $decode_params Input params for the decode function
 	 */
-	public function __construct(array $decode_params) {
-		parent::__construct('LZWDecode', $decode_params);
+	public function __construct(array $stream_params, array $decode_params) {
+		parent::__construct('LZWDecode', $stream_params, $decode_params);
 	}
 
 	/**

@@ -7,7 +7,7 @@ use dataplan\pdfStreamDecode\filter\flate_decode;
 class FlateDecodeTest extends StreamDecodeTestCase {
 
 	public function testDecode() {
-		$filter = new flate_decode([]);
+		$filter = new flate_decode([], []);
 
 		$expected_result = 'such compress, very gzip';
 		$input = gzcompress($expected_result);

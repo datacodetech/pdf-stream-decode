@@ -10,7 +10,7 @@ class Jbig2DecodeTest extends StreamDecodeTestCase {
 		$this->expectException(\Exception::class);
 		$this->expectExceptionMessage('Not yet implemented');
 
-		$filter = new jbig2_decode([]);
+		$filter = new jbig2_decode([], []);
 		$filter->decode('');
 	}
 

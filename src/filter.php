@@ -17,14 +17,17 @@ use dataplan\pdfStreamDecode\filter\jpx_decode;
 abstract class filter {
 
 	protected $name;
+	protected $stream_params;
 	protected $decode_params;
 
 	/**
 	 * @param string $name The filter name
+	 * @param array $stream_params An assoc array of params attached to the stream
 	 * @param array $decode_params Input variables for the decode function
 	 */
-	public function __construct(string $name, array $decode_params) {
+	public function __construct(string $name, array $stream_params, array $decode_params) {
 		$this->name = $name;
+		$this->stream_params = $stream_params;
 		$this->decode_params = $decode_params;
 	}
 
@@ -69,11 +72,12 @@ abstract class filter {
 	 * Creates a instance of a filter by name
 	 *
 	 * @param string $name The name of the filter
+	 * @param array $stream_params Variables attached to the stream object, excluding Filter and DecodeParms
 	 * @param array $decode_params Input variables for the decode function
 	 *
 	 * @return filter The filter instance
 	 */
-	public static function get_by_name(string $name, array $decode_params): filter {
+	public static function get_by_name(string $name, array $stream_params, array $decode_params): filter {
 		$class_map = self::get_class_map();
 
 		if (!array_key_exists($name, $class_map)) {
@@ -82,7 +86,7 @@ abstract class filter {
 
 		$class_name = $class_map[$name];
 
-		return new $class_name($decode_params);
+		return new $class_name($stream_params, $decode_params);
 	}
 
 }

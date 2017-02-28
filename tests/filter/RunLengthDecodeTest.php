@@ -7,7 +7,7 @@ use dataplan\pdfStreamDecode\filter\run_length_decode;
 class RunLengthDecodeTest extends StreamDecodeTestCase {
 
 	public function testDecode() {
-		$filter = new run_length_decode([]);
+		$filter = new run_length_decode([], []);
 
 		$expected_result = 'AAAABBBBBB123123123';
 		$input = chr(257 - 4) . 'A' . chr(257 - 6) . 'B' . "\x08" . '123123123' . "\x80";
