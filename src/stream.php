@@ -19,7 +19,7 @@ class stream {
 	 * @param string $data The input data
 	 */
 	public function __construct(array $stream_params, string $data) {
-		$this->filter_names = $stream_params['Filter'];
+		$this->filter_names = ($stream_params['Filter'] ?? []);
 		$this->stream_params = $stream_params;
 		$this->decode_params = ($stream_params['DecodeParms'] ?? []);
 		$this->data = $data;
