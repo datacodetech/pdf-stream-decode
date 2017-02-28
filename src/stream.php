@@ -34,7 +34,7 @@ class stream {
 			$this->decode_params = [ $this->filter_names[0] => $this->decode_params ];
 		}
 
-		foreach ($filter_names as $name) {
+		foreach ($this->filter_names as $name) {
 			$this->filters[] = filter::get_by_name($name, $this->stream_params, $this->decode_params[$name]);
 		}
 	}
