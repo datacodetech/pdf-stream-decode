@@ -12,11 +12,11 @@ class stream {
 	private $decoded;
 
 	/**
-	 * @param string $filter_names A list of filter names
+	 * @param array $filter_names A list of filter names
 	 * @param array $decode_params The decode_params from the PDF header
 	 * @param string $data The input data
 	 */
-	public function __construct(string $filter_names, array $decode_params, string $data) {
+	public function __construct(array $filter_names, array $decode_params, string $data) {
 		$this->filters = [];
 
 		foreach ($filter_names as $name) {
