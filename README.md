@@ -29,7 +29,9 @@ use dataplan\pdfStreamDecode\stream;
 
 $parser = new Parser();
 
-$page = $parser->getPages()[0];
+$document = $parser->parseContent(file_get_contents('pdf_file.pdf'));
+
+$page = $document->getPages()[0];
 $object = $page->getXObjects()[0];
 
 $object_details = $object->getDetails();
