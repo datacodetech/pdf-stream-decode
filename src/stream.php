@@ -52,6 +52,10 @@ class stream {
 
 			foreach ($this->filters as $filter) {
 				$this->decoded = $filter->decode($this->decoded);
+
+				if ($this->decoded === null) {
+					return null;
+				}
 			}
 		}
 
