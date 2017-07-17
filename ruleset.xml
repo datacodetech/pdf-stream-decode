@@ -5,16 +5,16 @@
 	<exclude-pattern type="relative">^test-results/*</exclude-pattern>
 	<exclude-pattern type="relative">^test.php</exclude-pattern>
 
-	<rule ref="vendor/dataplan/code-standard/Standard" />
+	<rule ref="vendor/dataplan/code-standard/DataplanStandard" />
 
 	<!-- PHPUnis uses epcial function comments -->
-	<rule ref="Standard.Commenting.FunctionComment">
+	<rule ref="DataplanStandard.Commenting.FunctionComment">
 		<exclude-pattern>*/tests/*</exclude-pattern>
 	</rule>
 
 	<!-- Not too bothered about spacing and full stops -->
-	<rule ref="Standard.Commenting.FunctionComment.SpacingAfterParamType"><severity>0</severity></rule>
-	<rule ref="Standard.Commenting.FunctionComment.SpacingAfterParamName"><severity>0</severity></rule>
-	<rule ref="Standard.Commenting.FunctionComment.ThrowsNoFullStop"><severity>0</severity></rule>
-	<rule ref="Standard.Commenting.FunctionComment.ParamCommentFullStop"><severity>0</severity></rule>
+	<rule ref="DataplanStandard.Commenting.FunctionComment.SpacingAfterParamType"><severity>0</severity></rule>
+	<rule ref="DataplanStandard.Commenting.FunctionComment.SpacingAfterParamName"><severity>0</severity></rule>
+	<rule ref="DataplanStandard.Commenting.FunctionComment.ThrowsNoFullStop"><severity>0</severity></rule>
+	<rule ref="DataplanStandard.Commenting.FunctionComment.ParamCommentFullStop"><severity>0</severity></rule>
 </ruleset>
