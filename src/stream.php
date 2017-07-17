@@ -46,7 +46,7 @@ class stream {
 	 *
 	 * @return string The data
 	 */
-	public function decode(): string {
+	public function decode(): ?string {
 		if ($this->decoded === null) {
 			$this->decoded = $this->data;
 
