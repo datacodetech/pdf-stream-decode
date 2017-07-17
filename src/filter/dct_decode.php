@@ -19,7 +19,7 @@ class dct_decode extends filter {
 	/**
 	 * @inheritDoc
 	 */
-	public function decode(string $data): string {
+	public function decode(string $data): ?string {
 		// Raw JPG data, just return
 		return $data;
 	}

@@ -45,9 +45,9 @@ abstract class filter {
 	 *
 	 * @param string $data The input data
 	 *
-	 * @return string The result
+	 * @return string The result or null if decoding failed
 	 */
-	abstract public function decode(string $data): string;
+	abstract public function decode(string $data): ?string;
 
 	/**
 	 * Gets a map of filter names to the class that implements them

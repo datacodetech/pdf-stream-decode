@@ -19,7 +19,7 @@ class jpx_decode extends filter {
 	/**
 	 * @inheritDoc
 	 */
-	public function decode(string $data): string {
+	public function decode(string $data): ?string {
 		// These are .jp2 files so just return
 		return $data;
 	}

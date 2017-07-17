@@ -19,7 +19,7 @@ class run_length_decode extends filter {
 	/**
 	 * @inheritDoc
 	 */
-	public function decode(string $data): string {
+	public function decode(string $data): ?string {
 		// Based (heavily) on https://github.com/zendframework/zf1/blob/master/library/Zend/Pdf/Filter/RunLength.php
 
 		$data_length = strlen($data);

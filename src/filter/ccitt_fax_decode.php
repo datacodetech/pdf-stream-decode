@@ -19,7 +19,7 @@ class ccitt_fax_decode extends filter {
 	/**
 	 * @inheritDoc
 	 */
-	public function decode(string $data): string {
+	public function decode(string $data): ?string {
 		$width = ($this->stream_params['Width'] ?? $this->stream_params['W'] ?? 1728);
 		$height = ($this->stream_params['Height'] ?? $this->stream_params['H'] ?? 0);
 

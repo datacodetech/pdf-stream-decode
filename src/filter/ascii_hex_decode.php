@@ -19,7 +19,7 @@ class ascii_hex_decode extends filter {
 	/**
 	 * @inheritDoc
 	 */
-	public function decode(string $data): string {
+	public function decode(string $data): ?string {
 		return hex2bin($data);
 	}
 
