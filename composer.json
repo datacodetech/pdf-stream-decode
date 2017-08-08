@@ -1,16 +1,16 @@
 {
 	"name": "dataplan/pdf-stream-decode",
-	"version": "0.1",
+	"version": "1.0.0",
+	"type": "library",
+	"license": "proprietary",
+	"description": "PHP library to decode data from PDF stream objects",
+	"keywords": [],
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"repositories": [
 		{
-			"type": "vcs",
-			"url": "git@git.dataplan.co.uk:jacek/dataplan-code-standard.git"
-		},
-		{
-			"type": "vcs",
-			"url": "https://github.com/betterphp/php-reflection-utils.git"
+			"type": "composer",
+			"url": "https://packages.dataplan.co.uk"
 		}
 	],
 	"require": {
@@ -18,10 +18,10 @@
 		"setasign/fpdi": "~1.6"
 	},
 	"require-dev": {
-		"dataplan/code-standard": "dev-master",
+		"dataplan/code-standard": "~1.1",
 		"squizlabs/php_codesniffer": "~3",
 		"phpunit/phpunit": "~6",
-		"betterphp/php-reflection-utils": "dev-master",
+		"betterphp/php-reflection-utils": "~1",
 		"smalot/pdfparser": "~0.10"
 	},
 	"autoload": {
