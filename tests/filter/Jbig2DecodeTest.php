@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use dataplan\pdfStreamDecode\filter\jbig2_decode;
+use datacode\pdfStreamDecode\filter\jbig2_decode;
 
 /**
- * @covers dataplan\pdfStreamDecode\filter\jbig2_decode
+ * @covers datacode\pdfStreamDecode\filter\jbig2_decode
  */
 class Jbig2DecodeTest extends StreamDecodeTestCase {
 

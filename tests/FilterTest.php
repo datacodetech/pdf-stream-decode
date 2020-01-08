@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 use betterphp\utils\reflection;
 
-use dataplan\pdfStreamDecode\filter;
+use datacode\pdfStreamDecode\filter;
 
 /**
- * @covers dataplan\pdfStreamDecode\filter
+ * @covers datacode\pdfStreamDecode\filter
  */
 class FilterTest extends StreamDecodeTestCase {
 

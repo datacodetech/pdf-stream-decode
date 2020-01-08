@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use dataplan\pdfStreamDecode\filter\ascii85_decode;
+use datacode\pdfStreamDecode\filter\ascii85_decode;
 
 /**
- * @covers dataplan\pdfStreamDecode\filter\ascii85_decode
+ * @covers datacode\pdfStreamDecode\filter\ascii85_decode
  */
 class ASCII85DecodeTest extends StreamDecodeTestCase {
 

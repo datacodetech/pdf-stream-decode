@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use dataplan\pdfStreamDecode\filter\ccitt_fax_decode;
+use datacode\pdfStreamDecode\filter\ccitt_fax_decode;
 
 /**
- * @covers dataplan\pdfStreamDecode\filter\ccitt_fax_decode
+ * @covers datacode\pdfStreamDecode\filter\ccitt_fax_decode
  */
 class CCITTFaxDecodeTest extends StreamDecodeTestCase {
 

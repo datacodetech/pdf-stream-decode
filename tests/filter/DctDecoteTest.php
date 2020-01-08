@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use dataplan\pdfStreamDecode\filter\dct_decode;
+use datacode\pdfStreamDecode\filter\dct_decode;
 
 /**
- * @covers dataplan\pdfStreamDecode\filter\dct_decode
+ * @covers datacode\pdfStreamDecode\filter\dct_decode
  */
 class DctDecodeTest extends StreamDecodeTestCase {
 

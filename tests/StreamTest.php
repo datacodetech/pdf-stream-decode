@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 use betterphp\utils\reflection;
 
-use dataplan\pdfStreamDecode\stream;
-use dataplan\pdfStreamDecode\filter;
-use dataplan\pdfStreamDecode\filter\ccitt_fax_decode;
+use datacode\pdfStreamDecode\stream;
+use datacode\pdfStreamDecode\filter;
+use datacode\pdfStreamDecode\filter\ccitt_fax_decode;
 
 class StreamTest extends StreamDecodeTestCase {
 

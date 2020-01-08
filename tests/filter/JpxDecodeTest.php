@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use dataplan\pdfStreamDecode\filter\jpx_decode;
+use datacode\pdfStreamDecode\filter\jpx_decode;
 
 /**
- * @covers dataplan\pdfStreamDecode\filter\jpx_decode
+ * @covers datacode\pdfStreamDecode\filter\jpx_decode
  */
 class JpxDecodeTest extends StreamDecodeTestCase {
 

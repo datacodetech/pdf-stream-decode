@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use dataplan\pdfStreamDecode\filter\flate_decode;
+use datacode\pdfStreamDecode\filter\flate_decode;
 
 /**
- * @covers dataplan\pdfStreamDecode\filter\flate_decode
+ * @covers datacode\pdfStreamDecode\filter\flate_decode
  */
 class FlateDecodeTest extends StreamDecodeTestCase {
 

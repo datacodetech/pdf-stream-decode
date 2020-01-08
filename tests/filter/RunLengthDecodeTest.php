@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use dataplan\pdfStreamDecode\filter\run_length_decode;
+use datacode\pdfStreamDecode\filter\run_length_decode;
 
 /**
- * @covers dataplan\pdfStreamDecode\filter\run_length_decode
+ * @covers datacode\pdfStreamDecode\filter\run_length_decode
  */
 class RunLengthDecodeTest extends StreamDecodeTestCase {
 

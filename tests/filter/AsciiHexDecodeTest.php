@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-use dataplan\pdfStreamDecode\filter\ascii_hex_decode;
+use datacode\pdfStreamDecode\filter\ascii_hex_decode;
 
 /**
- * @covers dataplan\pdfStreamDecode\filter\ascii_hex_decode
+ * @covers datacode\pdfStreamDecode\filter\ascii_hex_decode
  */
 class ASCIIHexDecodeTest extends StreamDecodeTestCase {
 

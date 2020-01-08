@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace dataplan\pdfStreamDecode\filter;
+namespace datacode\pdfStreamDecode\filter;
 
-use dataplan\pdfStreamDecode\filter;
+use datacode\pdfStreamDecode\filter;
 
 class jpx_decode extends filter {
 

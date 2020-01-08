@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace dataplan\pdfStreamDecode\filter;
+namespace datacode\pdfStreamDecode\filter;
 
 use Tuupola\Base85;
 
-use dataplan\pdfStreamDecode\filter;
+use datacode\pdfStreamDecode\filter;
 
 class ascii85_decode extends filter {
 

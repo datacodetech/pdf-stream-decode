@@ -1,32 +1,26 @@
 {
-	"name": "dataplan/pdf-stream-decode",
+	"name": "datacodetech/pdf-stream-decode",
 	"version": "1.0.0",
 	"type": "library",
-	"license": "proprietary",
+	"license": "MIT",
 	"description": "PHP library to decode data from PDF stream objects",
 	"keywords": [],
 	"minimum-stability": "dev",
 	"prefer-stable": true,
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "https://packages.dataplan.co.uk"
-		}
-	],
 	"require": {
 		"tuupola/base85": "~0.1",
 		"setasign/fpdi": "~1.6"
 	},
 	"require-dev": {
-		"dataplan/code-standard": "~1.1",
-		"squizlabs/php_codesniffer": "~3",
-		"phpunit/phpunit": "~6",
+		"datacodetech/phpcs-ruleset": "^2.0.0",
+		"squizlabs/php_codesniffer": "^3.5.3",
+		"phpunit/phpunit": "^8.5.2",
 		"betterphp/php-reflection-utils": "~1",
-		"smalot/pdfparser": "~0.10"
+		"smalot/pdfparser": "^0.14.0"
 	},
 	"autoload": {
 		"psr-4": {
-			"dataplan\\pdfStreamDecode\\": "./src"
+			"datacode\\pdfStreamDecode\\": "./src"
 		}
 	}
 }

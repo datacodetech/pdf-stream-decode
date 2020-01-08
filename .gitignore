@@ -3,6 +3,7 @@ Thumbs.db
 
 # Vim swap files
 *.swp
+*.swo
 
 # Atom thing - https://atom.io/packages/savey-wavey
 /.on-save.json
@@ -11,9 +12,11 @@ Thumbs.db
 /.idea
 
 # Composer/library files
-/composer.lock
 /composer.phar
 /vendor
 
 # Test results
 /test-results
+
+# PHPUnit cache file
+/.phpunit.result.cache

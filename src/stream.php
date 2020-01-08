@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace dataplan\pdfStreamDecode;
+namespace datacode\pdfStreamDecode;
 
 class stream {
 
