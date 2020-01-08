@@ -1,6 +1,6 @@
 {
 	"name": "datacodetech/pdf-stream-decode",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"type": "library",
 	"license": "MIT",
 	"description": "PHP library to decode data from PDF stream objects",
